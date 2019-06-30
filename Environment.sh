@@ -27,4 +27,6 @@ systemctl restart vsftpd &&
 systemctl enable vsftpd &&
 
 sudo yum update -y &&
-yum group install "virtualization Host" "Virtualization client" -y
+yum group install "virtualization Host" "Virtualization client" -y &&
+
+yum install system-config-kickstart -y
