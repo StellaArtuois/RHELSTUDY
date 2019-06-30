@@ -33,6 +33,8 @@ clearpart --none --initlabel
 @^minimal
 @core
 chrony
-kexec-tools
- 
+kexec-tools 
 %end
+
+# Reboot when the install is finished.
+reboot
