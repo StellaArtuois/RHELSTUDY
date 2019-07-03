@@ -29,4 +29,8 @@ systemctl enable vsftpd &&
 sudo yum update -y &&
 yum group install "virtualization Host" "Virtualization client" -y &&
 
-yum install system-config-kickstart -y
+yum install system-config-kickstart -y &&
+
+sudo yum install elinks -y &&
+
+yum install setroubleshoot setools -y
