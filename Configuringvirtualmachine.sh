@@ -7,4 +7,5 @@ virt-install --name=test1.example.com --ram=2048 --vcpus=2 --disk path=/home/gui
 
 
 # Configuring virtual machine with kickstart from local server.
-virt-install --name=test1.example.com --ram=2048 --vcpus=2 --disk path=/home/guillermo/SAMSUNGEVO/KVMQEMU/tester1.example.com.qcow2,size=16,bus=virtio --graphics=spice --network=bridge:virbr0 -l ftp://192.168.122.1/pub/inst --os-type=linux --os-variant=centos7.0 -x "ks=ftp://192.168.122.74/pub/ks.cfg"
+virt-install --name=test1.example.com --ram=2048 --vcpus=2 --disk path=/home/guillermo/KVMtester1.example.com.qcow2,size=16,bus=virtio --graphics=spice --network=bridge:virbr0 -l ftp://192.168.122.43/pub/inst --os-type=linux --os-variant=centos7.0 -x "ks=ftp://192.168.122.43/pub/ks.cfg"
+
