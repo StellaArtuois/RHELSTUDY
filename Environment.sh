@@ -1,42 +1,46 @@
 #!/bin/bash
 
-yum update -y &&
+sudo yum update -y &&
 
 # Apache
-yum -y install httpd &&
-systemctl start httpd &&
-systemctl enable httpd &&
-mkdir /var/www/html/inst &&
-chcon -R --reference=/var/www/html /var/www/html/inst &&
-firewall-cmd --permanent --add-service=http &&
-firewall-cmd --reload &&
-systemctl restart httpd &&
-systemctl enable httpd &&
+sudo yum -y install httpd &&
+sudo systemctl start httpd &&
+sudo systemctl enable httpd &&
+sudo mkdir /var/www/html/inst &&
+sudo chcon -R --reference=/var/www/html /var/www/html/inst &&
+sudo firewall-cmd --permanent --add-service=http &&
+sudo firewall-cmd --reload &&
+sudo systemctl restart httpd &&
+sudo systemctl enable httpd &&
 
 # VSFTP
-yum install vsftpd -y &&
-systemctl start vsftpd &&
-systemctl enable vsftpd &&
-firewall-cmd --permanent --add-service=ftp &&
-firewall-cmd --reload &&
-systemctl enable vsftpd &&
+sudo yum install vsftpd -y &&
+sudo systemctl start vsftpd &&
+sudo systemctl enable vsftpd &&
+sudo firewall-cmd --permanent --add-service=ftp &&
+sudo firewall-cmd --reload &&
+sudo systemctl enable vsftpd &&
 
-mkdir /var/ftp/pub/inst &&
-firewall-cmd --permanent --add-service=ftp &&
-firewall-cmd --reload &&
-chcon -R -t public_content_t /var/ftp/ &&
-systemctl restart vsftpd &&
-systemctl enable vsftpd &&
+sudo mkdir /var/ftp/pub/inst &&
+sudo firewall-cmd --permanent --add-service=ftp &&
+sudo firewall-cmd --reload &&
+sudo chcon -R -t public_content_t /var/ftp/ &&
+sudo systemctl restart vsftpd &&
+sudo systemctl enable vsftpd &&
 
 # Installing Virt-manager and KVM
 sudo yum update -y &&
-yum group install "virtualization Host" "Virtualization client" -y &&
+sudo yum group install "virtualization Host" "Virtualization client" -y &&
 
 # Program to configure kickstart files
-yum install system-config-kickstart -y &&
+sudo yum install system-config-kickstart -y &&
 
 # Terminal Browser
 sudo yum install elinks -y &&
 
 # SeLinux Troubleshoot program
-yum install setroubleshoot setools -y
+sudo yum install setroubleshoot setools -y &&
+
+# Cockpit is a web-based server manager https://cockpit-project.org/
+
+sudo yum install cockpit -y
