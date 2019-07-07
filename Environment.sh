@@ -30,7 +30,6 @@ sudo systemctl enable vsftpd &&
 
 # Installing Virt-manager and KVM
 sudo yum update -y &&
-sudo yum group install "virtualization Host" "Virtualization client" -y &&
 
 # Program to configure kickstart files
 sudo yum install system-config-kickstart -y &&
