@@ -42,4 +42,8 @@ sudo yum install setroubleshoot setools -y &&
 
 # Cockpit is a web-based server manager https://cockpit-project.org/
 
-sudo yum install cockpit -y
+sudo yum install cockpit -y &&
+
+sudo yum install rsync -y &&
+
+sudo yum install pykickstart -y

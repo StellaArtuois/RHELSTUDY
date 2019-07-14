@@ -18,21 +18,21 @@ sudo mount -o loop ~/CentOS-7-x86_64-Minimal.iso /media/mydrive
 ## Create a working copy of installation media
 
 sudo mkdir -p /var/tmp/media/mydrive
-sudo yum install -y rsync
+sudo yum install rsync -y
 sudo rsync -av /media/mydrive/ /var/tmp/media/mydrive/
 sudo umount /media/mydrive
 
 ## Configure kickstart
 
-$ sudo cp /root/anaconda-ks.cfg ~/ks.cfg
-$ sudo vim ~/ks.cfg
+sudo cp /root/anaconda-ks.cfg ~/ks.cfg
+sudo vim ~/ks.cfg
 
 ## Validate the kickstart config
 
-$ sudo yum install -y pykickstart
-$ sudo ksvalidator ~/ks.cfg
-$ sudo yum install -y pykickstart
-$ sudo ksvalidator ~/ks.cfg
+sudo yum install pykickstart -y
+sudo ksvalidator ~/ks.cfg
+sudo yum install pykickstart -y
+sudo ksvalidator ~/ks.cfg
 
 ## Add this just before label linux
 
