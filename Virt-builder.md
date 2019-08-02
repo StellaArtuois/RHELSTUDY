@@ -17,4 +17,4 @@ Virt-builder is a tool for quickly building new virtual machines. You can build 
 
 ### Build my own virtualmachine
 
-`virt-builder centos-7.6 --format qcow2 --size 16G --root-password file:Welkom09!`
+`sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09!`
