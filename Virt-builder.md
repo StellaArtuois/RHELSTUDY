@@ -2,7 +2,7 @@
 
 Virt-builder is a tool for quickly building new virtual machines. You can build a variety of VMs for local or cloud use, usually within a few minutes or less. Virt-builder also has many ways to customize these VMs. Everything is run from the command line and nothing requires root privileges, so automation and scripting is simple.
 
-
+sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'
 ### Since the templates are usually very large, downloaded templates are cached in the user’s home directory.
 
 `The location of the cache is $XDG_CACHE_HOME/virt-builder/ or $HOME/.cache/virt-builder.`
@@ -18,3 +18,5 @@ Virt-builder is a tool for quickly building new virtual machines. You can build 
 ### Build my own virtualmachine
 
 `sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09!`
+
+`sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
