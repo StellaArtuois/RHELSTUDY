@@ -46,4 +46,9 @@ sudo yum install cockpit -y &&
 
 sudo yum install rsync -y &&
 
-sudo yum install pykickstart -y
+sudo yum install pykickstart -y &&
+
+
+# SELinux Policy Management tool.
+
+yum install policycoreutils-python -y &&
