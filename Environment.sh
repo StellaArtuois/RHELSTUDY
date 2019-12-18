@@ -48,7 +48,17 @@ sudo yum install rsync -y &&
 
 sudo yum install pykickstart -y &&
 
+# Auditing with Auditd Tool on CentOS/RHEL https://www.tecmint.com/linux-system-auditing-with-auditd-tool-on-centos-rhel/
+
+sudo yum install auditd -y &&
+
+# Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
+
+sudo yum install lynis -y &&
+
 
 # SELinux Policy Management tool.
 
 yum install policycoreutils-python -y &&
+
+# 
