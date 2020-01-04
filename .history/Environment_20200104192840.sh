@@ -52,9 +52,7 @@ sudo yum install pykickstart -y &&
 
 sudo yum install auditd -y &&
 
-# Autofs for automatically mounting directories at request basis instead of automatically when the server starts.
-
-sudo yum install autofs -y &&
+# Autofs for automatically mounting directories 
 
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 

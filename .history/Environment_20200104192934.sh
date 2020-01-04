@@ -54,8 +54,6 @@ sudo yum install auditd -y &&
 
 # Autofs for automatically mounting directories at request basis instead of automatically when the server starts.
 
-sudo yum install autofs -y &&
-
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 
 sudo yum install lynis -y &&
