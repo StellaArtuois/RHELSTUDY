@@ -3,15 +3,10 @@
 # Importing GPG key
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release &&
 
-# Validating GPG key
+# Validating
 rpm -qa gpg-pubkey
 
 sudo yum update -y &&
-
-# Enable console from KVM/QEMU
-
-sudo systemctl start getty@tty1.service &&
-sudo systemctl enable getty@tty1.service &&
 
 # Apache
 sudo yum -y install httpd &&

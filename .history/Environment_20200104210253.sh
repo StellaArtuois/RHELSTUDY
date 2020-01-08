@@ -1,17 +1,6 @@
 #!/bin/bash
 
-# Importing GPG key
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release &&
-
-# Validating GPG key
-rpm -qa gpg-pubkey
-
 sudo yum update -y &&
-
-# Enable console from KVM/QEMU
-
-sudo systemctl start getty@tty1.service &&
-sudo systemctl enable getty@tty1.service &&
 
 # Apache
 sudo yum -y install httpd &&
@@ -65,8 +54,9 @@ sudo yum install auditd -y &&
 
 # Autofs for automatically mounting directories at request basis instead of automatically when the server starts.
 # "Autofs uses the automount daemon to manage your mount points by only mounting them dynamically when they are accessed."
+# sudo yum install autofs -y &&
+# Substitute for autofs is systemd automount
 
-sudo yum install autofs -y &&
 
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 
