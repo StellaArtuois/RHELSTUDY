@@ -8,7 +8,7 @@ rpm -qa gpg-pubkey
 
 sudo yum update -y &&
 
-# Enable console from KVM/QEMU (Don't use in production.)
+# Enable console from KVM/QEMU (Don't use in productu)
 
 sudo systemctl start getty@tty1.service &&
 sudo systemctl enable getty@tty1.service &&
