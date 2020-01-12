@@ -75,4 +75,4 @@ sudo yum install -y -qq lynis &&
 
 # SELinux Policy Management tool.
 
-yum install -y -qq policycoreutils-python
+yum install -y -qq policycoreutils-python -y

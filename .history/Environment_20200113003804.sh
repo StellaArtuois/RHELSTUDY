@@ -66,13 +66,13 @@ sudo yum install -y -qq auditd &&
 # Autofs for automatically mounting directories at request basis instead of automatically when the server starts.
 # "Autofs uses the automount daemon to manage your mount points by only mounting them dynamically when they are accessed."
 
-sudo yum install -y -qq autofs &&
+sudo yum install -y -qq autofs -y &&
 
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 
-sudo yum install -y -qq lynis &&
+sudo yum install -y -qq lynis -y &&
 
 
 # SELinux Policy Management tool.
 
-yum install -y -qq policycoreutils-python
+yum install -y -qq policycoreutils-python -y

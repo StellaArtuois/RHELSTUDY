@@ -70,9 +70,9 @@ sudo yum install -y -qq autofs &&
 
 # Lynis is one of the most trusted automated auditing tool for software patch management, malware scanning and vulnerability detecting in Unix/Linux based systems. (https://cisofy.com/)
 
-sudo yum install -y -qq lynis &&
+sudo yum install -y -qq lynis -y &&
 
 
 # SELinux Policy Management tool.
 
-yum install -y -qq policycoreutils-python
+yum install -y -qq policycoreutils-python -y
