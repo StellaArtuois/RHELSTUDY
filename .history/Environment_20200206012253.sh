@@ -39,29 +39,10 @@ sudo chcon -R -t public_content_t /var/ftp/ &&
 sudo systemctl restart vsftpd &&
 sudo systemctl enable vsftpd &&
 
-# Yum  yum-utils - classic YUM utilities implemented as CLI shims on top of DNF
-
-sudo yum install -y -qq yum-utils &&
+# Yum U
 
 # Installing Virt-manager and KVM
-#sudo yum update -y &&
-
-# yum group info "Virtualization Host"
-# Environment Group: Virtualization Host
-# Description: Minimal virtualization host.
-# Mandatory Groups:
-#   Base
-#   Core
-#   Standard
-#   Virtualization Hypervisor
-#   Virtualization Tools
-# Optional Groups:
-#   Debugging Tools
-#   Network File System Client
-#   Remote Management for Linux
-#   Virtualization Platform
-
-sudo yum install -y -qq yum group install "Virtualization Host"
+sudo yum update -y &&
 
 # Program to configure kickstart files
 sudo yum install -y -qq system-config-kickstart &&

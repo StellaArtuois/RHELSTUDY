@@ -61,7 +61,8 @@ sudo yum install -y -qq yum-utils &&
 #   Remote Management for Linux
 #   Virtualization Platform
 
-sudo yum install -y -qq yum group install "Virtualization Host"
+sudo yum install -y -qq [root@localhost admin]# yum group install "Virtualization Host"
+
 
 # Program to configure kickstart files
 sudo yum install -y -qq system-config-kickstart &&

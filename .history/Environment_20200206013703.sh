@@ -52,16 +52,15 @@ sudo yum install -y -qq yum-utils &&
 # Mandatory Groups:
 #   Base
 #   Core
-#   Standard
-#   Virtualization Hypervisor
-#   Virtualization Tools
-# Optional Groups:
-#   Debugging Tools
-#   Network File System Client
-#   Remote Management for Linux
-#   Virtualization Platform
+   Standard
+   Virtualization Hypervisor
+   Virtualization Tools
+ Optional Groups:
+   Debugging Tools
+   Network File System Client
+   Remote Management for Linux
+   Virtualization Platform
 
-sudo yum install -y -qq yum group install "Virtualization Host"
 
 # Program to configure kickstart files
 sudo yum install -y -qq system-config-kickstart &&

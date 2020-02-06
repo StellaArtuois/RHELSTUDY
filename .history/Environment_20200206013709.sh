@@ -58,10 +58,9 @@ sudo yum install -y -qq yum-utils &&
 # Optional Groups:
 #   Debugging Tools
 #   Network File System Client
-#   Remote Management for Linux
-#   Virtualization Platform
+   Remote Management for Linux
+   Virtualization Platform
 
-sudo yum install -y -qq yum group install "Virtualization Host"
 
 # Program to configure kickstart files
 sudo yum install -y -qq system-config-kickstart &&
