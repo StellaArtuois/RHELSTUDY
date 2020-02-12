@@ -22,3 +22,8 @@ sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:
 `sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09!`
 
 `sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
+
+`sudo virt-builder ubuntu-18.04 --format qcow2 --size 32G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
+
+`sudo virt-builder centos-7.6 -format qcow2 --size 32G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
+
