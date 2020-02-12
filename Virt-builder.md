@@ -27,3 +27,5 @@ sudo virt-builder centos-7.6 --format qcow2 --size 16G --root-password password:
 
 `sudo virt-builder centos-7.6 -format qcow2 --size 32G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
 
+Flaky support
+`sudo virt-builder centos-8.0 -format qcow2 --size 32G --root-password password:Welkom09! --firstboot-command \ 'useradd -m -p "" guillermo ; chage -d 0 guillermo'`
